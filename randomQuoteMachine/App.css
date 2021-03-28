@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
+:root {
+  --icon-colour: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+div {
+  position: relative;
+  z-index: 2;
+}
+
+body {
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#quote-box {
+  display: table;
+  position: relative;
+  background-color: #fff;
+  border-radius: 3px;
+  margin:8% auto auto auto;
+  padding: 40px 50px;
+  width: 450px;
+}
+
+#leftQuote {
+  font-size: 1.65em;
+  position: absolute;
+  left: -.5em;
+  top: .05em;
+}
+
+#quote-text {
+  text-align: center;
+  width: 450px;
+  height: auto;
+  clear: both;
+  font-weight: 500;
+  font-size: 1.75em;
+}
+
+#quote-author {
+  font-size: 1em;
+  font-weight: 400;
+  text-align: right;
+  clear: both;
+  width: 450px;
+  height: auto;
+  padding-top: 20px;
+}
+
+.buttons {
+  display: block;
+  margin: auto;
+  width: 450px;  
+}
+
+#new-quote {
+  float: right;
+  font-size: 0.85em;
+  text-align: center;
+  color: var(--icon-colour);
+  background-color: #333;
+  padding: 8px 18px 6px 18px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  height: 38px;
+  width: 112.5px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#new-quote:hover {
+  opacity: 0.9;
+}
+
+#tweet-quote {
+  float: left;
+  font-size: 0.85em;
+  text-align: center;
+  padding: 8px 18px 6px 18px;
+  margin: 30px 5px 0 0;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  opacity: 1;
+  height: 38px;
+  width: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+#tweet-quote:hover {
+  opacity: 0.9;
+}
+
+#brandIcon {
+  color: var(--icon-colour);
+  font-size: 1.25em;
+  margin: 0 auto;
+  position: absolute;
+  left: .7em;
+  top: .65em;
+  display: block;
+}
+
+.fadeIn {
+  opacity: 0;
+  display: block;
+  animation: fadeIn 2s ease-in-out forwards;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
