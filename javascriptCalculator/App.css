@@ -1,0 +1,154 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+
+:root {
+  --buttonColour: #4d4d4d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c2c2d6;
+  cursor: default;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#calculator {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "display display display display"
+    "allClear allClear division multiplication"
+    "numberSeven numberEight numberNine subtraction"
+    "numberFour numberFive numberSix addition"
+    "numberOne numberTwo numberThree equals"
+    "numberZero numberZero decimal equals";
+  border: 2px solid #47476b;
+  background: black;
+  padding: 5px;
+  width: 325px;
+  position: relative;
+  color: white;
+}
+
+.forumla-screen {
+  min-height: 20px;
+  font-family: digital;
+  font-size: 20px;
+  color: orange;
+  text-align: right;
+  vertical-align: text-top;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.output-screen {
+  font-size: 29px;
+  font-family: digital;
+  color: white;
+  text-align: right;
+  line-height: 35px;
+  width: 100%;
+}
+
+#display {
+  grid-area: display;
+  width: 100%;
+}
+
+.number-button {
+  position: relative;
+  height: 65px;
+  color: white;
+  outline: 1px solid black;
+  border: none;
+  background: var(--buttonColour);
+  font-family: Share Tech Mono, monospace;
+  font-size: 20px;
+  cursor: default;
+}
+
+button:hover {
+  color: black;
+  outline: 0.05em solid grey;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#clear {
+  grid-area: allClear;
+}
+
+#division {
+  grid-area: division;
+}
+
+#multiplication {
+  grid-area: multiplication;
+}
+
+#subtraction {
+  grid-area: subtraction;
+}
+
+#addition {
+  grid-area: addition;
+}
+
+#equals {
+  grid-area: equals;
+}
+
+#decimal {
+  grid-area: decimal;
+}
+
+#seven {
+  grid-area: numberSeven;
+}
+
+#eight {
+  grid-area: numberEight;
+}
+
+#nine {
+  grid-area: numberNine;
+}
+
+#four {
+  grid-area: numberFour;
+}
+
+#five {
+  grid-area: numberFive;
+}
+
+#six {
+  grid-area: numberSix;
+}
+
+#one {
+  grid-area: numberOne;
+}
+
+#two {
+  grid-area: numberTwo;
+}
+
+#three {
+  grid-area: numberThree;
+}
+
+#zero {
+  grid-area: numberZero;
+}
+
+
