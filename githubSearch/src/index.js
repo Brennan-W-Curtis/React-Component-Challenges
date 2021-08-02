@@ -1,0 +1,21 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { GithubProvider } from './context/context';
+//Auth0 Domain - dev-2q8hi6am.us.auth0.com
+//Auth0 Client Id - zOmfZY0zfovI99Y32RrJyQaL6WFAtyHK
+
+ReactDOM.render(
+  <React.StrictMode>
+    <GithubProvider>
+      <App />
+    </GithubProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
